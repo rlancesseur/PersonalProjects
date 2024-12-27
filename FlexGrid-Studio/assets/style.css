@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-primary-color: #050505;
+    --dark-secondary-color: #1E1F20;
+    --dark-tertiary-color: #282A2C;
+    --dark-text-color: #e2a600;
+
+    --light-primary-color: #c0c2cc;
+    --light-secondary-color: #ffffff;
+    --light-tertiary-color: #cdcfda;
+    --light-text-color: #1e1f20;
+}
+
+.dark {
+    --primary-color: var(--dark-primary-color);
+    --secondary-color: var(--dark-secondary-color);
+    --tertiary-color: var(--dark-tertiary-color);
+    --text-color: var(--dark-text-color);
+}
+
+.light {
+    --primary-color: var(--light-primary-color);
+    --secondary-color: var(--light-secondary-color);
+    --tertiary-color: var(--light-tertiary-color);
+    --text-color: var(--light-text-color);
+}
+
+body {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    margin: 20px 10px 20px 20px;
+    padding: 10px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-color: #7e7e7e transparent;
+    scrollbar-width: thin;
+    overflow: auto;
+}
+
+main {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    scrollbar-color: #7e7e7e transparent;
+    scrollbar-width: thin;
+    overflow: auto;
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 3px 3px var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.containerListInfo {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contenairInfo {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    select{
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        width: 40%;
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 10px;
+        border: none;
+    }
+}
+
+#containerTemplateColumns {
+    display: none;
+    #inputTemplateColumns {
+        width: 35%;
+    }
+}
+
+#containerTemplateRows {
+    display: none;
+    #inputTemplateRows {
+        width: 35%;
+    }
+}
+
+.zoneInputSelect {
+    display: flex;
+    width: 40%;
+    gap: 5px;
+}
+
+#inputTailleGap, #inputTemplateColumns, #inputTemplateRows {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+}
+
+#inputTailleGap {
+    width: 45%;
+    cursor: auto;
+    font-weight: bold;
+}
+
+#selectFormatGap {
+    width: 55%;
+}
+
+#zoneBtn {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.modifElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 2.5rem;
+    background-color: var(--tertiary-color);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: 200ms;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+#btnSuppr {
+    margin-bottom: 7px;
+}
+
+#btnReset {
+    font-size: 2rem;
+    margin-right: 3px;
+}
+
+#btnDarkLight {
+    cursor: pointer;
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+@media (max-width: 1200px) {
+    body {
+        grid-template-columns: 300px 1fr;
+        font-size: 0.9rem;
+    }
+
+    .element {
+        font-size: 3rem;
+    }
+
+    .contenairInfo {
+        padding: 10px;
+    }
+
+    .zoneInputSelect {
+        width: 55%;
+    }
+    
+    .modifElement {
+        width: 60px;
+        height: 60px;
+    }
+
+    #btnDarkLight {
+        width: 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 570px 570px;
+        height: auto;
+    }
+
+    nav {
+        margin: 20px 40px 10px 40px;
+    }
+
+    main {
+        margin: 10px 40px 20px 40px;
+    }
+
+    .element {
+        width: 80px;
+        height: 80px;
+    }
+
+    #btnDarkLight {
+        width: 30px;
+        top: 3px;
+        right: 3px;
+    }
+}
+
+@media (max-width: 430px) {
+    nav {
+        margin: 5px 5px 10px 5px;
+    }
+
+    main {
+        margin: 10px 5px 5px 5px;
+    }
+
+    .element {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexGrid Studio</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="dark">
+    <nav>
+        <div class="containerListInfo" id="containerDisplay">
+            <div class="contenairInfo">
+                <span>Display :</span>
+                <select name="listDisplay" id="selectDisplay">
+                    <option value="flex">Flex</option>
+                    <option value="grid">Grid</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="containerListInfo" id="containerFlexDirection">
+            <div class="contenairInfo">
+                <span>Flex Direction :</span>
+                <select name="listFlexDirection" id="selectFlexDirection">
+                    <option value="row">Row</option>
+                    <option value="row-reverse">Row Reverse</option>
+                    <option value="column">Column</option>
+                    <option value="column-reverse">Column Reverse</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="containerListInfo" id="containerJustifyContent">
+            <div class="contenairInfo">
+                <span>Justify Content :</span>
+                <select name="listJustifyContent" id="selectJustifyContent">
+                    <option value="start">Start</option>
+                    <option value="end">End</option>
+                    <option value="center">Center</option>
+                    <option value="space-around">Space Around</option>
+                    <option value="space-evenly">Space Evenly</option>
+                    <option value="space-between">Space Between</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="containerListInfo" id="containerAlignItems">
+            <div class="contenairInfo">
+                <span>Align Items :</span>
+                <select name="listSAlignItems" id="selectAlignItems">
+                    <option value="start">Start</option>
+                    <option value="end">End</option>
+                    <option value="center">Center</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="containerListInfo" id="containerFlexWrap">
+            <div class="contenairInfo">
+                <span>Flex Wrap :</span>
+                <select name="listFlexWrap" id="selectFlexWrap">
+                    <option value="wrap">Wrap</option>
+                    <option value="nowrap">No Wrap</option>
+                    <option value="wrap-reverse">Wrap-Reverse</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="containerListInfo" id="containerTemplateColumns">
+            <div class="contenairInfo">
+                <span>Grid Template Columns :</span>
+                <input type="text" id="inputTemplateColumns" placeholder="1fr 1fr 1fr 1fr">
+            </div>
+        </div>
+
+        <div class="containerListInfo" id="containerTemplateRows">
+            <div class="contenairInfo">
+                <span>Grid Template Row :</span>
+                <input type="text" id="inputTemplateRows" placeholder="1fr 1fr">
+            </div>
+        </div>
+
+        <div class="containerListInfo" id="containerGap">
+            <div class="contenairInfo">
+                <span>Gap :</span>
+                <div class="zoneInputSelect">
+                    <input type="number" id="inputTailleGap" placeholder="20">
+                    <select name="listFormatGap" id="selectFormatGap">
+                        <option value="px">px</option>
+                        <option value="%">%</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="zoneBtn">
+            <div class="modifElement">
+                <span id="btnSuppr">-</span>
+            </div>
+            <div class="modifElement">
+                <span id="btnReset">&#10226</span>
+            </div>
+            <div class="modifElement">
+                <span id="btnAjout">+</span>
+            </div>
+        </div>  
+    </nav>
+
+    <main>
+        <div class="element">1</div>
+    </main>
+
+    <img src="assets/img/lightMode.png" id="btnDarkLight"></span>
+
+    <script src="assets/script.js"></script>
+    
+</body>
+</html>
