@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-color1 : #121213;
+    --dark-color2 : #1E1F20;
+    --dark-color3 : #3c3d3f;
+    --light-color : #f1f1f1;
+    --yellow : #e2a600;
+}
+
+.barriecito-regular {
+    font-family: "Barriecito", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body {
+    background-color: var(--dark-color1);
+    color : var(--yellow);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Barriecito;
+    padding: 20px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+input {
+    width: 50px;
+    border: none;
+    text-align: center;
+    background-color: var(--dark-color3);
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 2px 0;
+}
+
+button {
+    background-color: var(--dark-color3);
+    padding: 8px;
+    margin: 3px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: var(--yellow);
+    cursor: pointer;
+    transition: 100ms;
+    box-shadow: 2px 2px var(--dark-color1);
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+#containerMenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#containerRandomNumbers {
+    display: none;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#containerCoinFlip {
+    display: none;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#containerRollDice {
+    display: none;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.zoneResultat {
+    font-size: 1.5rem;
+}
+
+#pageMenu {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: var(--dark-color2);
+    padding: 20px;
+    width: 400px;
+    box-shadow: 2px 2px var(--yellow);
+    h2 {
+        align-content: center;
+    }
+    ul {
+        text-align: center;
+        list-style: none;
+        font-size: 1.1rem;
+    }
+}
+
+#pageRandomNumbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--dark-color2);
+    padding: 20px;
+    width: 450px;
+    box-shadow: 2px 2px var(--yellow);
+    #btnPloufNbr {
+        width: 40%;
+        margin: 20px 0;
+    }
+}
+
+#pageCoinFlip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--dark-color2);
+    padding: 20px;
+    width: 450px;
+    box-shadow: 2px 2px var(--yellow);
+    #btnCoinFlip {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    #imgCoin {
+        width: 90%;
+    }
+}
+
+#pageRollDice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--dark-color2);
+    padding: 20px;
+    width: 450px;
+    box-shadow: 2px 2px var(--yellow);
+    #btnRollDice {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    #imgDice {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        padding: 10px;
+        font-size: 3.5rem;
+    }
+    
+    #pageMenu {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
+    #pageRandomNumbers {
+        width: 350px;
+    }
+
+    #pageCoinFlip {
+        width: 350px;
+    }
+
+    #pageRollDice {
+        width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    #pageMenu {
+        width: 250px;
+    }
+
+    #pageRandomNumbers {
+        width: 250px;
+    }
+
+    #pageCoinFlip {
+        width: 250px;
+    }
+
+    #pageRollDice {
+        width: 250px;
+    }
+}

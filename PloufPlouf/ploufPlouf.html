@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <title>Plouf Plouf</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+
+    <h1>Plouf Plouf</h1>
+
+    <div id="containerMenu">
+        <div id="pageMenu">
+            <h2>Random types</h2>
+            <ul>
+                <li><button id="btnPickItems">Pick items</button></li>
+                <li><button id="btnNbr">Numbers</button></li>
+                <li><button id="btnCoin">Coins</button></li>
+                <li><button id="btnDice">Dice</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="containerRandomNumbers">
+        <div id="pageRandomNumbers">
+            <div>Pick <input class="nbrSortie" type="number"> numbers between <input id="input1" type="number"> and <input id="input2" type="number"></div>
+            <button id="btnPloufNbr">Plouf plouf</button>
+            <div class="zoneResultat"></div>
+        </div>
+    </div>
+
+    <div id="containerCoinFlip">
+        <div id="pageCoinFlip">
+            <button id="btnCoinFlip">Flip</button>
+            <div class="zoneResultat"><img id="imgCoin" src=""></div>
+        </div>
+    </div>
+    
+    <div id="containerRollDice">
+        <div id="pageRollDice">
+            <button id="btnRollDice">Roll</button>
+            <div class="zoneResultat"><img id="imgDice" src=""></div>
+        </div>
+    </div>  
+    
+</body>
+</html>
