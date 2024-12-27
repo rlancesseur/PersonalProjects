@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&family=Squada+One&display=swap" rel="stylesheet">
+    <title>MusicTool</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+
+    <div id="pageMenu">
+        <div id="menu">
+            <h1>MusicTool</h1>
+
+            <h2>Tuner</h2>
+            <div id="containerIcone">
+                <div class="iconeInstru">
+                    <img src="assets/img/iconeGuitare.png" alt="Icone guitare" id="iconeGuitare">
+                </div>
+                <div class="iconeInstru">
+                    <img src="assets/img/iconeBasse.png" alt="Icone basse" id="iconeBasse">
+                </div>
+            </div>
+
+            <h2>Metronome</h2>
+            <div class="iconeInstru">
+                <img src="assets/img/metronome.png" alt="Icone métronome" id="iconeMetronome">
+            </div>
+
+        </div>
+    </div>
+    
+    <div id="pageGuitare">
+        <div id="guitare">
+            <img src="assets/img/guitar.png" alt="Manche guitare">
+            <div class="cercle" id="guitare1">E</div>
+            <div class="cercle" id="guitare2">A</div>
+            <div class="cercle" id="guitare3">D</div>
+            <div class="cercle" id="guitare4">G</div>
+            <div class="cercle" id="guitare5">B</div>
+            <div class="cercle" id="guitare6">E</div>
+        </div>
+    </div>
+
+    <div id="pageBasse">
+        <div id="basse">
+            <img src="assets/img/bass.png" alt="Manche basse">
+            <div class="cercle" id="bass1">E</div>
+            <div class="cercle" id="bass2">A</div>
+            <div class="cercle" id="bass3">D</div>
+            <div class="cercle" id="bass4">G</div>
+        </div>
+    </div>
+
+    <div id="pageMetronome">
+        <div id="metronome">
+            <input type="number" id="inputMetronome" placeholder="100">
+            <div id="contenairBtn">
+                <span class="btnMet" id="play">&#9656;</span>
+                <span class="btnMet" id="btnStop">&#9632;</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
