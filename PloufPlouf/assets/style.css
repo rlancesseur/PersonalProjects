@@ -32,6 +32,11 @@ h1 {
     font-size: 5rem;
 }
 
+a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
 input {
     width: 50px;
     border: none;
@@ -66,6 +71,12 @@ button {
     margin-top: 40px;
 }
 
+#containerPickItems {
+    display: none;
+    justify-content: center;
+    margin-top: 40px;
+}
+
 #containerRandomNumbers {
     display: none;
     justify-content: center;
@@ -84,7 +95,11 @@ button {
     margin-top: 40px;
 }
 
-.zoneResultat {
+#zoneResultatPick {
+    font-size: 1.5rem;
+}
+
+#zoneResultatNumbers {
     font-size: 1.5rem;
 }
 
@@ -106,6 +121,24 @@ button {
     }
 }
 
+#pagePickItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--dark-color2);
+    padding: 20px;
+    width: 450px;
+    box-shadow: 2px 2px var(--yellow);
+    #listItems {
+        margin-top: 20px;
+    }
+    #btnPick {
+        margin: 20px 0;
+    }
+}
+
 #pageRandomNumbers {
     display: flex;
     flex-direction: column;
@@ -117,7 +150,6 @@ button {
     width: 450px;
     box-shadow: 2px 2px var(--yellow);
     #btnPloufNbr {
-        width: 40%;
         margin: 20px 0;
     }
 }
@@ -172,6 +204,10 @@ button {
         width: 300px;
     }
 
+    #pagePickItems {
+        width: 350px;
+    }
+
     #pageRandomNumbers {
         width: 350px;
     }
@@ -191,6 +227,10 @@ button {
     }
 
     #pageMenu {
+        width: 250px;
+    }
+
+    #pagePickItems {
         width: 250px;
     }
 

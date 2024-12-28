@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <h1>Plouf Plouf</h1>
+    <h1><a href="https://rlancesseur.github.io/PersonalProjects/PloufPlouf/ploufPlouf.html">Plouf Plouf</a></h1>
 
     <div id="containerMenu">
         <div id="pageMenu">
@@ -25,12 +25,26 @@
             </ul>
         </div>
     </div>
+
+    <div id="containerPickItems">
+        <div id="pagePickItems">
+            <div id="zoneAdd">
+                <label for="addItem">Add an item : </label>
+                <input type="text" id="addItem">
+                <button id="btnAdd">Add</button>
+            </div>
+            <div>Pick <input id="nbrSortieItems" type="number"> items</div>
+            <div id="listItems"></div>
+            <button id="btnPick">Pick</button>
+            <div id="zoneResultatPick"></div>
+        </div>
+    </div> 
     
     <div id="containerRandomNumbers">
         <div id="pageRandomNumbers">
-            <div>Pick <input class="nbrSortie" type="number"> numbers between <input id="input1" type="number"> and <input id="input2" type="number"></div>
+            <div>Pick <input id="nbrSortieNbr" type="number"> numbers between <input id="input1" type="number"> and <input id="input2" type="number"></div>
             <button id="btnPloufNbr">Plouf plouf</button>
-            <div class="zoneResultat"></div>
+            <div id="zoneResultatNumbers"></div>
         </div>
     </div>
 
@@ -46,7 +60,7 @@
             <button id="btnRollDice">Roll</button>
             <div class="zoneResultat"><img id="imgDice" src=""></div>
         </div>
-    </div>  
+    </div> 
     
 </body>
 </html>
