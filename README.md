@@ -1,4 +1,4 @@
-# PersonalProjects
+# PersonalProjects - Rémi Lancesseur
 
 This repository gathers some [Personal projects](https://rlancesseur.github.io/PersonalProjects/)
 
