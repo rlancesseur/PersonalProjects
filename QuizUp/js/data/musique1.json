@@ -1,42 +1,52 @@
 [
     {
         "question": "Quel groupe a chanté \"Bohemian Rhapsody\"",
+        "choix": ["Queen", "The Who", "Radiohead", "Muse"],
         "reponse": "Queen"
     },
     {
         "question": "Quel groupe a été fondé par John Lennon et Paul McCartney ?",
-        "reponse": "Beatles"
+        "choix": ["The Rolling Stones", "Pink Floyd", "The Beatles", "Led Zeppelin"],
+        "reponse": "The Beatles"
     },
     {
         "question": "Qui a composé \"Les Quatres Saisons\" ?",
+        "choix": ["Mozart", "Vivaldi", "Beethoven", "Chopin"],
         "reponse": "Vivaldi"
     },
     {
         "question": "Quel genre musical est associé à la culture jamaïcaine ?",
+        "choix": ["Rock", "Reggae", "Jazz", "Punk"],
         "reponse": "Reggae"
     },
     {
         "question": "Quel groupe a chanté \"Smells Like Teen Spirit\" ?",
+        "choix": ["Red Hot Chili Peppers", "Linkin Park", "Blink 182", "Nirvana"],
         "reponse": "Nirvana"
     },
     {
-        "question": "Quel est le nom de la note qui suit le do ?",
+        "question": "Quel est le nom de la note qui suit le Do ?",
+        "choix": ["Ré", "Do", "Mi", "Fa"],
         "reponse": "Ré"
     },
     {
         "question": "Question Musique niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     }
 ]

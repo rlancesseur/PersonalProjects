@@ -1,42 +1,52 @@
 [
     {
         "question": "Quel instrument à cordes frottées est utilisé dans les orchestres arabes ?",
+        "choix": ["Darbouka", "Oud", "Cornemuse", "Sitar"],
         "reponse": "Oud"
     },
     {
         "question": "Slash (Guns N' Roses) joue sur quel type de guitare ?",
+        "choix": ["Telecaster", "Gibson SG", "Gibson Les Paul", "Stratocaster"],
         "reponse": "Gibson Les Paul"
     },
     {
         "question": "Question Musique niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     }
 ]

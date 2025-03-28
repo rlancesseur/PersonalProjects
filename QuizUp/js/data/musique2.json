@@ -1,42 +1,52 @@
 [
     {
         "question": "Comment s'appelle le guitariste soliste d'AC/DC ?",
+        "choix": ["Angus Young", "Slash", "Eric Clapton", "Tom Morello"],
         "reponse": "Angus Young"
     },
     {
         "question": "Quelle note est la plus haute sur une portée ?",
+        "choix": ["Sol", "La", "Si", "Do"],
         "reponse": "Si"
     },
     {
-        "question": "Quelle est la différence entre un accord majeur et un accord mineur ?",
-        "reponse": "Tierce"
+        "question": "Question Musique niveau 2",
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Musique niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     }
 ]

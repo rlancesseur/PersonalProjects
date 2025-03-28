@@ -4,7 +4,15 @@ const pageResultat = document.querySelector('#pageResultat')
 const listeCategorie = document.querySelector("#categories")
 const niveauDifficulte = document.querySelector("#difficulte")
 const zoneQuestion = document.querySelector('#question')
-const zoneReponse = document.querySelector('#reponse')
+const inputRep1 = document.querySelector('#rep1')
+const inputRep2 = document.querySelector('#rep2')
+const inputRep3 = document.querySelector('#rep3')
+const inputRep4 = document.querySelector('#rep4')
+const labelRep1 = document.querySelector('#labelRep1')
+const labelRep2 = document.querySelector('#labelRep2')
+const labelRep3 = document.querySelector('#labelRep3')
+const labelRep4 = document.querySelector('#labelRep4')
+
 const zoneScore = document.querySelector('#score')
 const resultat = document.querySelector('#resultat')
 const btnCategorie = document.querySelector('#btnCategorie')
@@ -16,27 +24,55 @@ const btnPseudo = document.querySelector('#btnPseudo')
 const pagePseudo = document.querySelector('#pagePseudo')
 const inputPseudo = document.querySelector('#inputPseudo')
 const pseudo = document.querySelector('#pseudo')
+const btnValider = document.querySelector('#btnValider')
+const radios = document.querySelectorAll('input[name="reponse"]')
+
 let pseudoUtilisateur = ""
 let score = 0
 let questionActuelle = 0
-
+let ecouteurValider
 
 const afficherQuestion = (questions) => {
     const question = questions[questionActuelle]
     zoneQuestion.innerHTML = question.question
+    labelRep1.innerHTML = question.choix[0]
+    labelRep2.innerHTML = question.choix[1]
+    labelRep3.innerHTML = question.choix[2]
+    labelRep4.innerHTML = question.choix[3]
+
+    inputRep1.value = question.choix[0]
+    inputRep2.value = question.choix[1]
+    inputRep3.value = question.choix[2]
+    inputRep4.value = question.choix[3]
+
+    radios.forEach(radio => radio.checked = false)
+
     pseudo.innerHTML = pseudoUtilisateur
     zoneScore.innerHTML = score
-    zoneReponse.focus()
 }
 
 const verifieReponse = (questions) => {
-    const reponseUtilisateur = document.querySelector('#reponse').value.toLowerCase()
-    const bonneReponse = questions[questionActuelle].reponse.toLowerCase()
+    let reponseUtilisateur = ''
+    let reponseSelectionnee = false
+
+    for (const radio of radios) {
+        if (radio.checked) {
+            reponseUtilisateur = radio.value
+            reponseSelectionnee = true
+            break
+        }
+    }
+
+    if (!reponseSelectionnee) {
+        alert("Veuillez sélectionner une réponse avant de continuer.")
+        return
+    }
+
+    const bonneReponse = questions[questionActuelle].reponse
     if(reponseUtilisateur === bonneReponse) {
         score++
     }
     questionActuelle++
-    zoneReponse.value = ""
 
     if(questionActuelle < questions.length) {
         afficherQuestion(questions)
@@ -67,10 +103,15 @@ const lancerQuizz = (categorie, difficulte) => {
     fetch("js/data/" + categorie + "" + difficulte + ".json")
     .then(response => response.json())
     .then(questions => {
-
+        if (ecouteurValider) {
+            btnValider.removeEventListener("click", ecouteurValider);
+        }
+        score = 0
+        questionActuelle = 0
         afficherQuestion(questions)
     
-        btnValider.addEventListener("click", () => verifieReponse(questions))
+        ecouteurValider = () => verifieReponse(questions)
+        btnValider.addEventListener("click", ecouteurValider)
     })
 }
 
@@ -94,18 +135,14 @@ btnStart.addEventListener("click", () => {
     lancerQuizz(categorie, difficulte)
 })
 
-//A refaire
 btnReset.addEventListener("click", () => {
-    btnValider.removeEventListener("click", verifieReponse) // Ne remove pas le bon écouteur
     score = 0
     questionActuelle = 0
     pageResultat.style.display = "none"
     pageMenu.style.display = "flex"
 })
 
-//A refaire
 btnRecommencer.addEventListener("click", () => {
-    btnValider.removeEventListener("click", verifieReponse) // Ne remove pas le bon écouteur
     score = 0
     questionActuelle = 0
     pageResultat.style.display = "none"
@@ -114,10 +151,8 @@ btnRecommencer.addEventListener("click", () => {
     lancerQuizz(listeCategorie.value, niveauDifficulte.value)
 })
 
-//A refaire
 btnSuivant.addEventListener("click", () => {
     if(niveauDifficulte.value < 5) {
-        btnValider.removeEventListener("click", verifieReponse) // Ne remove pas le bon écouteur
         score = 0
         questionActuelle = 0
         niveauDifficulte.value++

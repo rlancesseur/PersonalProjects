@@ -1,42 +1,52 @@
 [
     {
         "question": "Quelle plateforme de distribution numérique de jeux vidéo est détenue par Valve ?",
+        "choix": ["Steam", "Battle.net", "Epic Games", "GOG"],
         "reponse": "Steam"
     },
     {
         "question": "Quel est le prénom du personnage principal de la série The Witcher ?",
+        "choix": ["Gérard", "Zeldo", "Master Chief", "Geralt"],
         "reponse": "Geralt"
     },
     {
         "question": "Comment appelle-t-on un personnage non-joueur contrôlé par l'ordinateur ?",
+        "choix": ["PNG", "PNJ", "PNL", "Plop"],
         "reponse": "PNJ"
     },
     {
         "question": "Dans le jeu Metal Gear Solid, quel objet utilise Solid Snake pour se cacher ?",
+        "choix": ["Ventilation", "Cape d'invisibilité", "Carton", "Buisson"],
         "reponse": "Carton"
     },
     {
         "question": "Quel numéro a été attribué au tueur à gages de la série Hitman ?",
+        "choix": ["42", "47", "007", "1337"],
         "reponse": "47"
     },
     {
         "question": "Question Jeux vidéo niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 2",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     }
 ]

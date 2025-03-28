@@ -1,42 +1,52 @@
 [
     {
         "question": "Quel est le nom de la 6eme extensions de World of Warcraft ?",
+        "choix": ["Legion", "Cataclysm", "Battle for Azeroth", "Mists of Pandaria"],
         "reponse": "Legion"
     },
     {
-        "question": "Comment s'appelle la société multinationale de recherche pharmaceutique dans Reseident Evil ?",
+        "question": "Comment s'appelle la société multinationale de recherche pharmaceutique dans Resident Evil ?",
+        "choix": ["Choix 1", "Sanofi", "Umbrella Corporation", "Choix 4"],
         "reponse": "Umbrella Corporation"
     },
     {
         "question": "Quel est le jeu le + vendu de l'histoire ?",
+        "choix": ["Tetris", "Fortnite", "Minecraft", "GTA V"],
         "reponse": "Minecraft"
     },
     {
         "question": "Comment s'apelle la monnaie dans le jeu Dofus ?",
+        "choix": ["Kamas", "Pokédollar", "V-bucks", "Simflouz"],
         "reponse": "Kamas"
     },
     {
-        "question": "Question Jeux vidéo niveau 3",
-        "reponse": ""
+        "question": "A quelle entreprise appartient Twitch ?",
+        "choix": ["Disney", "Google", "ZQSD", "Amazon"],
+        "reponse": "Amazon"
     },
     {
         "question": "Question Jeux vidéo niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 3",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     }
 ]

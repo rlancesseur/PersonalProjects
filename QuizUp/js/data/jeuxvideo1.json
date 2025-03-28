@@ -1,42 +1,52 @@
 [
     {
         "question": "Quel est le nom du personnage principal de la série The Legend of Zelda ?",
+        "choix": ["Zelda", "Link", "Ganon", "Robert"],
         "reponse": "Link"
     },
     {
         "question": "Quelle entreprise a créé la PlayStation ?",
+        "choix": ["Nintendo", "Nestlé", "Sony", "Sega"],
         "reponse": "Sony"
     },
     {
         "question": "Combien y a t'il de Pokémon de la première génération ?",
+        "choix": ["42", "151", "320", "500"],
         "reponse": "151"
     },
     {
         "question": "Comment s'appelle le frère de Mario ?",
+        "choix": ["Luigi", "Link", "Robert", "Maria"],
         "reponse": "Luigi"
     },
     {
         "question": "Quel animal est Sonic ?",
+        "choix": ["Écureuil", "Link", "Phasme", "Hérisson"],
         "reponse": "Hérisson"
     },
     {
         "question": "Question Jeux vidéo niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     },
     {
         "question": "Question Jeux vidéo niveau 1",
-        "reponse": ""
+        "choix": ["Choix 1", "Choix 2", "Choix 3", "Choix 4"],
+        "reponse": "Choix 1"
     }
 ]

@@ -28,7 +28,6 @@
             <select name="typeCategorie" id="categories">
                 <option value="musique">Musique</option>
                 <option value="jeuxvideo">Jeux video</option>
-                <option value="twitch">Twitch</option>
             </select>
         </div>
         <div id="zoneDiff">
@@ -47,14 +46,33 @@
 
     <div id="pageQuestions">
         <div id="question"></div>
-        <input type="text" id="reponse">
+        
+        <div id="containerChoix">
+            <div class="label-grp">
+                <input type="radio" id="rep1" value="" name="reponse">
+                <label for="rep1" id="labelRep1"></label>
+            </div>
+            <div class="label-grp">
+                <input type="radio" id="rep2" value="" name="reponse">
+                <label for="rep2" id="labelRep2"></label>
+            </div>
+            <div class="label-grp">
+                <input type="radio" id="rep3" value="" name="reponse">
+                <label for="rep3" id="labelRep3"></label>
+            </div>
+            <div class="label-grp">
+                <input type="radio" id="rep4" value="" name="reponse">
+                <label for="rep4" id="labelRep4"></label>
+            </div>
+        </div>
+        
         <button id="btnValider">Valider</button>
         <div id="zoneScore">Score de <span id="pseudo"></span> : <span id="score">0</span></div>
     </div>
 
     <div id="pageResultat">
         <div id="resultat"></div>
-        <div id="ContenairBtn">
+        <div id="contenairBtn">
             <button id="btnReset">Retour menu</button>
             <button id="btnRecommencer">Recommencer niveau</button>
             <button id="btnSuivant">Niveau suivant</button>
