@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <title>Puissance 4</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="module" src="assets/script.js"></script>
+</head>
+<body>
+
+    <h1>Puissance 4</h1>
+
+    <main>
+        <div class="menu">
+            <form action="">
+                <div class="formP">
+                    <div class="formP1">
+                        <div class="form-grp">
+                            <label for="nomP1">Nom Joueur 1 : </label>
+                            <input id="nomP1" type="text" required>
+                        </div>
+                        <div class="form-grp">
+                            <label for="colorP1-select">Couleur Joueur 1 : </label>
+                            <select name="colorP1" id="color-selectP1">
+                                <option value="">Choisir une couleur</option>
+                                <option value="firebrick">Rouge</option>
+                                <option value="gold">Jaune</option>
+                                <option value="SteelBlue">Bleu</option>
+                                <option value="green">Vert</option>
+                                <option value="white">Blanc</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="formP2">
+                        <div class="form-grp">
+                            <label for="nomP2">Nom Joueur 2 : </label>
+                            <input id="nomP2" type="text" required>
+                        </div>
+                        <div class="form-grp">
+                            <label for="colorP2-select">Couleur Joueur 2 : </label>
+                            <select name="colorP2" id="color-selectP2">
+                                <option value="">Choisir une couleur</option>
+                                <option value="firebrick">Rouge</option>
+                                <option value="gold">Jaune</option>
+                                <option value="SteelBlue">Bleu</option>
+                                <option value="green">Vert</option>
+                                <option value="white">Blanc</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" id="btnSubmit">
+            </form>
+        </div>
+
+        <div id="plateau"></div>
+
+        <div class="zoneResultat">
+            <div id="result"></div>
+            <div class="zoneBtn">
+                <button id="btnRecommencer">Recommencer</button>
+                <button id="btnChangerJoueur">Changer de joueurs</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="containerScore">
+            <p>Score <span id="zoneNomP1"></span> : <span id="zoneScoreP1">0</span></p>
+        </div>
+        <div class="containerScore">
+            <p>Score <span id="zoneNomP2"></span> : <span id="zoneScoreP2">0</span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
