@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --dark-color1 : #121213;
+    --dark-color2 : #1E1F20;
+    --dark-color3 : #3c3d3f;
+    --light-color : #f1f1f1;
+    --yellow : #e2a600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend';
+    background-image: url(img/dark-forest.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerPara {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 5px;
+    left: 5px;
+    z-index: 100;
+}
+
+#menuHaut {
+    display: flex;
+    h2 {
+        margin-top: 13px;
+    }
+}
+
+.containerMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3c3d3fa2;
+    border-radius: 10px;
+    gap: 5px;
+    padding: 10px 5px;
+    margin-left: 15px;
+    border: 1px solid #e2a6007e;
+}
+
+#logoPara {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 200ms;
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.containerChoiceSound {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    p {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+
+.containerBackground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.404);
+    label {
+        margin-bottom: 5px;
+    }
+    select {
+        background-color: var(--dark-color3);
+        color: var(--yellow);
+        padding: 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 80%;
+    }
+}
+
+.containerSound {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    button {
+        background-color: var(--dark-color3);
+        border: none;
+        border-radius: 5px;
+        color: var(--yellow);
+        padding: 5px 8px;
+        cursor: pointer;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+#chrono {
+    height: 60vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer {
+    font-size: 7rem;
+    margin: 20px 0;
+}
+
+#containerBtnHaut {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    button {
+        font-size: 1.1rem;
+        background-color: #2e2d2d00;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 30px;
+        border: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+        &:hover, &.active {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+#containerBtnBas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    button {
+        width: 100px;
+        padding: 10px;
+        border-radius: 30px;
+        border: 1px solid white;
+        cursor: pointer;
+        font-size: 1.5rem;
+        &:hover {
+            background-color: #2e2d2d00;
+            color: var(--yellow);
+        }
+    }
+}
+
+.containerTodo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 1px solid white;
+    h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+    ul {
+        padding: 5px 30px;
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 7px;
+    input {
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+    }
+}
+
+li {
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px;
+    gap: 5px;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+    color: var(--yellow);
+    background-color: #1e1f20b4;
+    div {
+        margin-left: 5px;
+    }
+}
+
+#btnAdd {
+    width: 70px;
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+    &:hover {
+        background-color: #2e2d2d00;
+        color: var(--yellow);
+    }
+}
+
+.btnTask {
+    font-size: 1rem;
+    background-color: var(--dark-color2);
+    color: var(--yellow);
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    &:hover {
+        background-color: #2e2d2d00;
+        color: white;
+    }
+}
+
+.task-complete {
+    text-decoration-line: line-through;
+    color: rgba(255, 255, 255, 0.63);
+}
+
+.btn-complete {
+    color: green;
+}
+
+@media (max-width: 850px) {
+    .containerPara {
+        flex-direction: row;
+    }
+
+    .containerMenu {
+        flex-direction: row;
+        width: 90%;
+        padding: 5px 5px;
+    }
+
+    .containerBackground {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+        label {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #app {
+        height: 80%;
+        justify-content: space-between;
+    }
+
+    .containerPara {
+        display: none;
+    }
+
+    #menuHaut {
+        h2 {
+            margin-top: 5px;
+        }
+    }
+
+    #logoPara {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #containerBtnHaut {
+        gap: 5px;
+        button {
+            padding: 4px 8px;
+        }
+    }
+
+    #chrono {
+        height: 40vh;
+    }
+
+    #timer {
+        font-size: 4rem;
+    }
+
+    #containerBtnBas {
+        button {
+            padding: 5px;
+        }
+    }
+
+    form {
+        flex-direction: column;
+    }
+    
+    li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    #app {
+        margin-top: 50px;
+        height: 100vh;
+    }
+
+    #timer {
+        font-size: 3rem;
+    }
+
+    #containerBtnBas {
+        button {
+            width: 90px;
+            padding: 5px;
+            font-size: 1.3rem;
+        }
+    }
+}

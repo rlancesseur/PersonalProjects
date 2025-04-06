@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="assets/script.js" type="module"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+
+    <div id="app">
+        <div class="containerPara">
+            <div id="menuHaut">
+                <img id="logoPara" src="assets/img/logo-para.png" alt="settings logo" @click="toggleMenu"> 
+                <h2>Settings</h2>
+            </div>
+            
+            <div v-if="showMenu" class="containerMenu">
+                <div class="containerChoiceSound">
+                    <p>Select an ambient sound</p>
+                    <div class="containerSound">
+                        <button @click="playSound('rainStorm')">&#9656;</button>
+                        <button @click="stopSound('rainStorm')">&#9632;</button>
+                        <p>Rainstorm</p>
+                    </div>
+                    <div class="containerSound">
+                        <button @click="playSound('forest')">&#9656;</button>
+                        <button @click="stopSound('forest')">&#9632;</button>
+                        <p>Birds</p>
+                    </div>
+                    <div class="containerSound">
+                        <button @click="playSound('wave')">&#9656;</button>
+                        <button @click="stopSound('wave')">&#9632;</button>
+                        <p>Waves</p>
+                    </div>
+                </div>
+                
+                <div class="containerBackground">
+                    <label>Select a background</label>
+                    <select v-model="selectedBackground" @change="changerFond">
+                        <option value="dark-forest.jpg">Dark forest</option>
+                        <option value="forest.jpg">Forest</option>
+                        <option value="mountains.jpg">Mountains</option>
+                        <option value="light-forest.jpg">Light forest</option>
+                        <option value="sunset.jpg">Sunset</option>
+                        <option value="futuristic.jpg">Futuristic</option>
+                        <option value="marsh.jpg">Marsh</option>
+                    </select>
+                </div> 
+            </div>
+        </div>
+
+        <div id="chrono">
+            <div id="containerBtnHaut">
+                <button @click="timerPomodoro" :class="{ active: activeBtn === 'pomodoro' }">Pomodoro</button>
+                <button @click="timerShortBreak" :class="{ active: activeBtn === 'shortBreak' }">Short break</button>
+                <button @click="timerLongBreak" :class="{ active: activeBtn === 'longBreak' }">Long break</button>
+            </div>
+            <p id="timer">{{ minutes < 10 ? ''+ 0 + minutes : minutes }} : {{ secondes < 10 ? ''+ 0 + secondes: secondes}}</p>
+            <div id="containerBtnBas">
+                <button v-if="!intervalle" @click="demarrerChrono">Start</button>
+                <button v-if="intervalle" @click="pauseChrono">Pause</button>
+                <button @click="resetChrono">Reset</button>
+            </div>
+        </div>
+
+        <div class="containerTodo">
+            <h2>Tasks</h2>
+            <form @submit.prevent="ajouterTache">
+                <label for="addTask">Add task : </label>
+                <input type="text" id="addTask" v-model="nouvelleTache">
+                <button id="btnAdd">Add</button>
+            </form>
+            
+            <ul>
+                <li v-for="(task, index) in todoList" :key="index">
+                    <button class="btnTask" @click="suppTask(index)">x</button>
+                    <button class="btnTask" @click="checkTask(index)" :class="{ 'btn-complete': task.completed }">{{ task.completed ? "✔" : "" }}</button>
+                    <div :class="{ 'task-complete': task.completed }">{{ task.text }}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
