@@ -3,5 +3,6 @@
 This repository gathers some [Personal projects](https://rlancesseur.github.io/PersonalProjects/)
 
 **Technologies used:**
-* HTML, CSS, JavaScript
-* Vue.js in progress
+* HTML, CSS
+* JavaScript
+* Vue.js
